@@ -16,6 +16,19 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>JenkinsWar</finalName>
+   <finalName>TomCat_Demo</finalName> 
+   <!-- <finalName>JenkinsWar</finalName>  -->
+   
+   <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <configuration>
+                   <!-- <webXml>WebContent\WEB-INF\web.xml</webXml> -->
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                </configuration>
+            </plugin>
+        </plugins>
   </build>
+
 </project>
